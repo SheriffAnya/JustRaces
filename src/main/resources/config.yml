@@ -1,0 +1,299 @@
+# JustRaces Конфигурация
+
+# Настройки отладки
+debug: false
+
+# Настройки чата
+chat:
+  enabled: false
+  global_format: '{cast_prefix} &r{player}: &7{message}'
+  format: '{cast_prefix} &r{player}: &7{message}'
+
+# Сообщения
+messages:
+  prefix: '&6[&dJustRaces&6]&r '
+  assigned: '%prefix%&aВы присоединены к расе: &e{race}'
+  no_race: '%prefix%&cУ вас нет расы'
+  race_info_header: '&6=== Раса {race} ==='
+  race_full: '%prefix%&cЭта раса уже заполнена'
+  solo_race_taken: '%prefix%&cЭта раса уже занята другим игроком'
+  race_changed: '%prefix%&aВаша раса изменена на: &e{race}'
+  cannot_drop_item: '%prefix%&cВы не можете выбросить этот предмет!'
+  cannot_move_item: '%prefix%&cВы не можете переместить этот предмет!'
+
+# Специфичные настройки для рас
+rusal-settings:
+  drowning-damage: 4.0
+  air-depletion-rate: 30
+  dolphin-grace-level: 2
+  fish-food-restore: 5
+  night-vision-in-water: true
+  conduit-breathing-range: 25
+
+undead-settings:
+  sun-damage: 2.0
+  healing-potion-multiplier: 2.0
+  rotten-flesh-saturation: 5
+  blindness-in-light: true
+  night-vision-in-darkness: true
+
+elei-settings:
+  flight-duration: 40
+  flight-cooldown: 7
+  full-cooldown: 280
+  speed-level: 1
+  show-actionbar: true
+  wind-charge-interval: 20
+  max-wind-charges: 1
+  feather-slot: 0
+  pvp-cooldown: 15
+  pvp-flight-drain-multiplier: 2.0
+  pvp-flight-speed-multiplier: 0.5
+
+ender-settings:
+  attack-range: 4.5
+  water-damage: 2.5
+  rain-damage: 1.0
+  pearl-interval: 20
+  max-pearls: 16
+  endermite-spawn-chance: 80
+  chorus-fruit-bonus: true
+
+giant-settings:
+  fist-damage: 7.0
+  knockback-power: 1.5
+  mining-speed-boost: 1.2
+  movement-slowdown: 0.15
+  permanent-slowness: true
+  no-bed-sleeping: true
+
+fortune-settings:
+  permanent-luck: true
+  speed-duration: 60
+  speed-level: 0
+  damage-increase: 1.15
+  totem-chance: 30
+  blindness-on-totem: true
+  blindness-duration: 200
+
+golem-settings:
+  damage-resistance: 0.15
+  knockback-power: 2.0
+  permanent-slowness: true
+  villager-discount: 0.5
+  iron-armor-unbreakable: true
+  no-knockback: true
+  knockback-attacker: true
+
+warden-settings:
+  sculk-bonus-range: 16
+  damage-bonus: 0.27
+  player-vision-range: 17
+  stun-chance: 5
+  stun-duration: 20
+  permanent-resistance: 2
+  no-armor: true
+  spawn-sculk-on-kill: true
+  leave-sculk-on-death: true
+  ignore-by-wardens: true
+
+druid-settings:
+  forest-bonus: 0.2
+  regeneration-on-grass: true
+  fire-damage-multiplier: 1.5
+  nether-slowness: true
+  wolf-count: 2
+  strength-in-forest: true
+  speed-in-forest: true
+  bossbar-show-strength: true
+  wolf-summon-duration: 90
+  wolf-summon-cooldown: 120
+
+runekeeper-settings:
+  rune-regen-interval: 30
+  max-runes: 3
+  crit-multiplier: 1.5
+  exp-per-hit: 1
+  exp-per-damage: 2
+  night-vision-with-runes: true
+  no-shields: true
+  no-totems: true
+  show-bossbar: true
+  stages:
+    '0':
+      exp: 5
+      health: 7.0
+      speed: 0
+      jump: 0.75
+      size: 1.25
+    '1':
+      exp: 15
+      health: 12.0
+      speed: 0
+      jump: 1.0
+      size: 1.4
+    '2':
+      exp: 25
+      health: 17.0
+      speed: 1
+      jump: 1.25
+      size: 1.55
+    '3':
+      exp: 50
+      health: 22.0
+      speed: 1
+      jump: 1.5
+      size: 1.7
+    '4':
+      exp: 75
+      health: 27.0
+      speed: 2
+      jump: 1.75
+      size: 1.85
+    '5':
+      exp: 125
+      health: 32.0
+      speed: 2
+      jump: 2.0
+      size: 2.0
+
+# Точки возрождения для рас (если нет точки на кровати)
+respawn:
+  Русал:
+    world: world
+    x: -354.0
+    y: 61.0
+    z: -12.0
+    radius: 20
+  Элей:
+    world: world
+    x: 211.0
+    y: 72.0
+    z: 290.0
+    radius: 79
+  Фортуна:
+    world: world
+    x: -603.0
+    y: 104.0
+    z: 11.0
+    radius: 77
+  Нежить:
+    world: world
+    x: -225.0
+    y: 78.0
+    z: 148.0
+    radius: 35
+  Голем:
+    world: world
+    x: -192.0
+    y: 87.0
+    z: 250.0
+    radius: 25
+  Варден:
+    world: world
+    x: 287.0
+    y: 67.0
+    z: 163.0
+    radius: 25
+  Эндермен:
+    world: world
+    x: 344.0
+    y: 118.0
+    z: 192.0
+    radius: 77
+  Гигант:
+    world: world
+    x: -35.0
+    y: 96.0
+    z: 445.0
+    radius: 50
+  Тень:
+    world: world
+    x: -110.0
+    y: 86.0
+    z: -80.0
+    radius: 70
+  Друид:
+    world: world
+    x: -143.0
+    y: 72.0
+    z: -171.0
+    radius: 77
+  Эфрит:
+    world: world_nether
+    x: -20.0
+    y: 65.0
+    z: 59.0
+    radius: 10
+  ХранительРун:
+    world: world
+    x: -500.0
+    y: 74.0
+    z: -500.0
+    radius: 20
+
+# Основные настройки рас (именно отсюда плагин читает параметры)
+casts:
+  Русал:
+    health: 20.0
+    size: 1.0
+    max-size: 4
+    color: '&b'
+    can-breathe-underwater: true
+    needs-water-to-breathe: true
+    underwater-mining-speed: 1.5
+  Элей:
+    health: 14.0
+    size: 0.55
+    max-size: 4
+    color: '&a'
+  Фортуна:
+    health: 15.0
+    size: 1.0
+    max-size: 4
+    color: '&6'
+  Нежить:
+    health: 17.0
+    size: 1.0
+    max-size: 4
+    color: '&8'
+  Голем:
+    health: 25.0
+    size: 1.5
+    max-size: 4
+    color: '&7'
+  Варден:
+    health: 50.0
+    size: 2.0
+    max-size: 1
+    color: '&5'
+  Эндермен:
+    health: 24.0
+    size: 1.5
+    max-size: 4
+    color: '&d'
+  Гигант:
+    health: 35.0
+    size: 1.625
+    max-size: 4
+    color: '&4'
+  Тень:
+    health: 15.0
+    size: 1.0
+    max-size: 4
+    color: '&0'
+  Друид:
+    health: 23.0
+    size: 1.0
+    max-size: 4
+    color: '&2'
+  Эфрит:
+    health: 19.0
+    size: 1.0
+    max-size: 4
+    color: '&c'
+  ХранительРун:
+    health: 7.0
+    size: 1.25
+    max-size: 1
+    color: '&5'

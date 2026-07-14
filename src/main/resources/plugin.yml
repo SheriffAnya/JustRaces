@@ -1,0 +1,30 @@
+name: JustRaces
+version: 1.0
+main: com.SheriffAnya.justRaces.JustRaces
+api-version: '1.21'
+authors: [SheriffAnya]
+description: Система рас для Minecraft
+depend: [PlaceholderAPI]
+
+commands:
+  race:
+    description: Информация о расах
+    usage: /<command> [раса/игрок]
+    aliases: [r]
+  raceadmin:
+    description: Административные команды для рас
+    usage: /<command> <команда> [аргументы]
+    aliases: [ra]
+
+permissions:
+  race.*:
+    description: Все разрешения рас
+    children:
+      race.admin: true
+      race.chat.color: true
+  race.admin:
+    description: Административные права рас
+    default: op
+  race.chat.color:
+    description: Использование цветов в общем чате
+    default: op
